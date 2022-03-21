@@ -27,4 +27,4 @@ jobs:
         uses: goreleaser/goreleaser-action@v2.4.1
         with:
           version: latest
-          args: release --skip-publish --snapshot
+          args: release --skip-publish --snapshot --debug
