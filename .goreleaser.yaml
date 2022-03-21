@@ -49,7 +49,7 @@ sboms:
   - documents:
       - "{{ .Binary }}_{{ .Os }}_{{ .Arch }}.bom.json"
     artifacts: binary
-    cmd: cyclonedx-gomod
+    cmd: ../cdx-gomod-wrapper.sh
     env:
       - GOOS={{ .Os }}
       - GOARCH={{ .Arch }}
